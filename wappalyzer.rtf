@@ -1,0 +1,54 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2708
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 HelveticaNeue;\f2\fnil\fcharset0 HelveticaNeue-Italic;
+\f3\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue192;\red42\green0\blue255;}
+{\*\expandedcolortbl;;\csgenericrgb\c0\c0\c75294;\csgenericrgb\c16471\c0\c100000;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww17340\viewh7780\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf0 package Package2;\
+\
+import org.junit.Before;\
+import org.junit.Test;\
+import org.openqa.selenium.By;\
+import org.openqa.selenium.chrome.ChromeDriver;\
+\
+public class wappalyzer \{\
+	ChromeDriver driver;\
+	\
+	@Before\
+	public void check() \{\
+		\
+		driver=new ChromeDriver();\
+		driver.get("https://www.wappalyzer.com/");\
+		\
+		\
+	\}\
+	\
+	@Test\
+	public void test() \{\
+		
+\f1 \cf2 driver\cf0 .findElement(By.
+\f2\i xpath
+\f1\i0 (\cf3 "//div[@id='__layout']/div/div/main/div/div/header/div/div/div/div/button [2]"\cf0 )).click();\
+\pard\pardeftab720\partightenfactor0
+\cf0 		\cf2 driver\cf0 .findElement(By.
+\f2\i xpath
+\f1\i0 (\cf3 "//a[@id='list-item-50']/div/div"\cf0 )).click();\
+		\cf2 driver\cf0 .findElement(By.
+\f2\i xpath
+\f1\i0 (\cf3 "//div[@id='__layout']/div/div/main/div/div/div/div/div/div/div/a/div/div/div"\cf0 )).click();\
+		\cf2 driver\cf0 .findElement(By.
+\f2\i xpath
+\f1\i0 (\cf3 "//div[@id='__layout']/div/div/main/div/div/div/div/div/div/div/a/span"\cf0 )).click();
+\f0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0                    driver.findElement(By.xpath("//*[@id="app"]/div/main/div/div[2]/div/div[2]/form/div[1]/div[1]/div[1]/div/div[1]/button")).click();\
+		driver.findElement(By.xpath("//*[@id="input-395\'94]\'94)).
+\f3\fs24 sendKeys(\cf3 \'93java\'94\cf0 );
+\f0\fs28 \
+          \
+	\}\
+\
+\}\
+}
